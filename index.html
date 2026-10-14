@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%2316181B%27/%3E%3Cg transform=%27translate(4 4) scale(0.375)%27%3E%3Cpath d=%27M6 8H58L53 22H6Z%27 fill=%27%23F4F2EE%27/%3E%3Cpath d=%27M6 26H42L37 38H6Z%27 fill=%27%23C4501E%27/%3E%3Cpath d=%27M6 42H58L53 56H6Z%27 fill=%27%23F4F2EE%27/%3E%3C/g%3E%3C/svg%3E">
+<style>body{margin:0}img{max-width:100%}</style>
+<title>Essera | Custom Software, Workflow Automation &amp; Applied AI</title>
+<link rel="canonical" href="https://essera.io/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://essera.io/">
+<meta property="og:title" content="Software for how businesses run">
+<meta property="og:description" content="Essera builds custom software, workflow automation and applied AI for established businesses. Based in North Carolina, working with companies across the US.">
+<meta property="og:image" content="https://essera.io/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Essera: software for how businesses run">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://essera.io/og-image.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "ProfessionalService", "name": "Essera", "url": "https://essera.io/", "email": "tyler@essera.io", "description": "Essera builds custom software, workflow automation and applied AI for established businesses. Based in North Carolina, working with companies across the US.", "areaServed": "US", "address": {"@type": "PostalAddress", "addressRegion": "NC", "addressCountry": "US"}, "knowsAbout": ["Custom software development", "Systems integration", "Workflow automation", "Document processing", "Applied AI"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does a project cost?", "acceptedAnswer": {"@type": "Answer", "text": "We price each project after scoping it. Before any work starts, you get a short written plan with what we will build, what it should save and a cost estimate."}}, {"@type": "Question", "name": "How long does a typical project take?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the problem. Scoping takes days, not weeks, and we build in small increments so you see working software early instead of waiting until the end."}}, {"@type": "Question", "name": "Do we own the code?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You own the code, the documentation and the knowledge of how it works. There is no lock-in to Essera."}}, {"@type": "Question", "name": "Do you work with our existing systems?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Most of our work connects to software a business already runs on, so data moves between systems instead of being retyped by hand."}}, {"@type": "Question", "name": "When is AI the wrong answer?", "acceptedAnswer": {"@type": "Answer", "text": "Often. If a simple integration or a rule-based workflow solves the problem reliably, that is what we recommend. We use AI where it measurably earns its place, such as reading documents or answering questions over your own files."}}, {"@type": "Question", "name": "Where are you based?", "acceptedAnswer": {"@type": "Answer", "text": "Essera is based in North Carolina and works with companies across the US, remotely and on site when it helps."}}]}</script>
+
+<meta name="description" content="Essera builds custom software, workflow automation and applied AI for established businesses. Based in North Carolina, working with companies across the US.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100,500;125,600;125,700&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: forge-plate. Graphite and ground with one hot bar of ember; wide expanded type, hairline rules, a spec-sheet feel. */
+:root{
+  --ground:#F4F2EE;
+  --plate:#EAE7E1;
+  --ink:#16181B;
+  --steel:#4A5157;
+  --rule:#D3CFC7;
+  --ember:#C4501E;
+  --band:#16181B;
+  --band-ink:#F4F2EE;
+  --band-dim:#A9AFB5;
+  --display:"Archivo","Helvetica Neue",Helvetica,sans-serif;
+  --body:"IBM Plex Sans","Helvetica Neue",Helvetica,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#121416;--plate:#1B1E21;--ink:#ECEAE5;--steel:#A9AFB5;--rule:#2C3035;
+    --ember:#E0683A;--band:#1F2327;--band-ink:#ECEAE5;--band-dim:#A9AFB5;color-scheme:dark
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#121416;--plate:#1B1E21;--ink:#ECEAE5;--steel:#A9AFB5;--rule:#2C3035;
+  --ember:#E0683A;--band:#1F2327;--band-ink:#ECEAE5;--band-dim:#A9AFB5;color-scheme:dark
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.6}
+.wrap{max-width:72rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media (min-width:720px){.wrap{padding-left:max(40px,env(safe-area-inset-left,0px));padding-right:max(40px,env(safe-area-inset-right,0px))}}
+a{color:var(--ink)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--ember);outline-offset:3px}
+.label{font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--steel)}
+h1,h2,h3{font-family:var(--display);font-stretch:125%;margin:0;text-wrap:balance}
+
+/* header */
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:1.5rem}
+.brand{display:flex;align-items:center;gap:.75rem;text-decoration:none}
+.brand span{font-family:var(--display);font-stretch:125%;font-weight:700;letter-spacing:.12em;font-size:1.15rem}
+.mark .b{fill:var(--ink)} .mark .hot{fill:var(--ember)}
+.headlink{font-family:var(--mono);font-size:.85rem;text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:2px}
+.headlink:hover{border-color:var(--ember)}
+
+/* hero */
+.hero .wrap{display:grid;gap:3rem;padding-block:3.5rem 4.5rem;align-items:center}
+@media (min-width:860px){.hero .wrap{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);padding-block:5rem 6rem}}
+.hero h1{font-weight:600;font-size:clamp(2.1rem,5.2vw,3.6rem);line-height:1.05;letter-spacing:-.01em;max-width:18ch}
+.hero p.lede{max-width:34rem;color:var(--steel);font-size:1.15rem;margin:1.5rem 0 2rem}
+.cta{display:inline-flex;align-items:center;gap:.6rem;background:var(--ink);color:var(--ground);text-decoration:none;font-weight:500;padding:.85rem 1.25rem;min-height:44px}
+.cta:hover{background:var(--ember);color:#fff}
+.forge{width:100%;max-width:22rem;justify-self:center}
+.forge .b{fill:var(--ink)}
+.forge .hot{fill:var(--steel);animation:heat 2.4s ease-out .4s forwards}
+@keyframes heat{to{fill:var(--ember)}}
+@media (prefers-reduced-motion:reduce){.forge .hot{animation:none;fill:var(--ember)}}
+
+/* sections */
+section.block .wrap{padding-block:4rem;border-top:1px solid var(--rule)}
+.sec-head{display:grid;gap:.75rem;margin-bottom:2.5rem;max-width:40rem}
+.sec-head h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;line-height:1.15}
+.services{display:grid;gap:0;grid-template-columns:1fr}
+@media (min-width:720px){.services{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.svc{padding:1.75rem 0;border-top:1px solid var(--rule);display:grid;gap:.5rem;min-width:0}
+@media (min-width:720px){.svc:nth-child(odd){padding-right:2.5rem}.svc:nth-child(even){padding-left:2.5rem;border-left:1px solid var(--rule)}}
+.svc h3{font-size:1.2rem;font-weight:600;letter-spacing:.01em}
+.svc p{margin:0;color:var(--steel);max-width:34rem}
+
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:1.5rem;grid-template-columns:1fr;counter-reset:s}
+@media (min-width:720px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (min-width:1040px){.steps{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.steps li{counter-increment:s;background:var(--plate);padding:1.5rem;display:grid;gap:.5rem;align-content:start;min-width:0}
+.steps li::before{content:"0" counter(s);font-family:var(--mono);font-size:.85rem;color:var(--ember)}
+.steps h3{font-size:1.05rem;font-weight:600}
+.steps p{margin:0;color:var(--steel);font-size:.98rem}
+
+.principles{display:grid;gap:2rem;grid-template-columns:1fr}
+@media (min-width:860px){.principles{grid-template-columns:minmax(0,1fr) minmax(0,1.3fr)}}
+.principles dl{margin:0;display:grid;gap:1.25rem}
+.principles dt{font-weight:500}
+.principles dd{margin:.15rem 0 0;color:var(--steel)}
+
+/* contact band */
+.contact{background:var(--band);color:var(--band-ink)}
+.contact .wrap{padding-block:4.5rem;display:grid;gap:1.5rem}
+.contact h2{font-size:clamp(1.7rem,3.4vw,2.6rem);font-weight:600;line-height:1.1;max-width:22ch}
+.contact p{margin:0;color:var(--band-dim);max-width:36rem}
+.mailrow{display:flex;flex-wrap:wrap;align-items:center;gap:.75rem}
+.mail{font-family:var(--mono);font-size:1.15rem;color:var(--band-ink);user-select:all;text-decoration:none;border-bottom:2px solid var(--ember);padding-bottom:2px}
+.copy{font:500 .9rem var(--body);background:transparent;color:var(--band-ink);border:1px solid var(--band-dim);padding:.55rem .9rem;min-height:44px;cursor:pointer}
+.copy:hover{border-color:var(--band-ink)}
+.contact .wrap{grid-template-columns:1fr;gap:2.5rem}
+@media (min-width:900px){.contact .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:start}}
+.contact-copy{display:grid;gap:1.5rem;min-width:0}
+.form{display:grid;gap:1rem;min-width:0}
+.form .row{display:grid;gap:1rem;grid-template-columns:1fr}
+@media (min-width:560px){.form .row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.field{display:grid;gap:.35rem;min-width:0}
+.field label{font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--band-dim)}
+.field input,.field textarea{font:400 1rem var(--body);color:var(--band-ink);background:transparent;border:1px solid var(--band-dim);padding:.7rem .8rem;min-height:44px;width:100%}
+.field textarea{min-height:7.5rem;resize:vertical}
+.field input:focus,.field textarea:focus{outline:2px solid var(--ember);outline-offset:1px;border-color:var(--band-ink)}
+.send{justify-self:start;font:500 1rem var(--body);background:var(--ember);color:#fff;border:0;padding:.85rem 1.4rem;min-height:44px;cursor:pointer}
+.send:hover{filter:brightness(1.1)}
+.send[disabled]{opacity:.6;cursor:default}
+.status{margin:0;font-size:.95rem;color:var(--band-ink)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.faq{display:grid;gap:0;grid-template-columns:1fr}
+@media (min-width:720px){.faq{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:2.5rem}}
+.qa{padding:1.5rem 0;border-top:1px solid var(--rule);display:grid;gap:.4rem;min-width:0}
+.qa h3{font-size:1.05rem;font-weight:600}
+.qa p{margin:0;color:var(--steel)}
+footer .wrap{padding-block:2rem;display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Essera home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 64 64" aria-hidden="true"><path class="b" d="M8 12 H56 L52 22 H8 Z"/><path class="hot" d="M8 27 H42 L38 37 H8 Z"/><path class="b" d="M8 42 H56 L52 52 H8 Z"/></svg>
+      <span>ESSERA</span>
+    </a>
+    <a class="headlink" href="#contact">tyler@essera.io</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="label">Software for how businesses run</p>
+        <h1>We find the expensive problems in how your business runs, and build the software that fixes them.</h1>
+        <p class="lede">Essera works with established companies whose operations still depend on spreadsheets, inboxes and manual handoffs between systems. We integrate the tools you already have, automate the work in between, and apply AI where it measurably earns its place. Based in North Carolina, working with companies across the US.</p>
+        <a class="cta" href="#contact">Start a conversation <span aria-hidden="true">→</span></a>
+      </div>
+      <svg class="forge" viewBox="0 0 64 64" role="img" aria-label="Essera mark: three forged bars, the middle one heating to ember">
+        <path class="b" d="M8 12 H56 L52 22 H8 Z"/>
+        <path class="hot" d="M8 27 H42 L38 37 H8 Z"/>
+        <path class="b" d="M8 42 H56 L52 52 H8 Z"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="svc-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="label">What we do</p>
+        <h2 id="svc-h">Practical software for operations, built to run in production.</h2>
+      </div>
+      <div class="services">
+        <div class="svc">
+          <h3>Systems integration and custom software</h3>
+          <p>We connect the software your business already runs on so data moves between systems on its own, and build custom internal tools where off-the-shelf software falls short.</p>
+        </div>
+        <div class="svc">
+          <h3>Workflow automation</h3>
+          <p>We map how work actually gets done, find the steps that eat hours every week, like invoice handling, order entry and reporting, and replace them with reliable automated workflows your team can trust.</p>
+        </div>
+        <div class="svc">
+          <h3>Applied AI</h3>
+          <p>Document intelligence that reads invoices, orders, contracts and forms. Search and question answering over your own documents. AI built into workflows, with checks and human review where it matters.</p>
+        </div>
+        <div class="svc">
+          <h3>Technical architecture and advisory</h3>
+          <p>Independent technical judgment on build-versus-buy decisions, system design, vendor selection and AI strategy, from people who build the systems they recommend.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="how-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="label">How an engagement works</p>
+        <h2 id="how-h">From the problem to software you own.</h2>
+      </div>
+      <ol class="steps">
+        <li><h3>Find the cost</h3><p>We sit with your team, trace the process end to end, and identify where time, errors and money are being lost.</p></li>
+        <li><h3>Scope the fix</h3><p>A short written plan: what we'll build, what it should save, how long it takes and what it costs.</p></li>
+        <li><h3>Build and ship</h3><p>We build in small increments against your real systems and data, with your team reviewing as we go.</p></li>
+        <li><h3>Hand over</h3><p>You own the code, the documentation and the knowledge. We stay available for support and the next problem.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="why-h">
+    <div class="wrap principles">
+      <div class="sec-head">
+        <p class="label">Why Essera</p>
+        <h2 id="why-h">A small, hands-on technical team.</h2>
+      </div>
+      <dl>
+        <div><dt>The people who scope it build it.</dt><dd>No account managers or handoffs to a junior team. You work directly with the people writing the code.</dd></div>
+        <div><dt>We start from the business problem.</dt><dd>We are not a chatbot agency. If the right answer is a simple integration rather than AI, that's what we'll recommend.</dd></div>
+        <div><dt>Built for production, not demos.</dt><dd>Monitoring, error handling, security and documentation are part of the work, not extras.</dd></div>
+        <div><dt>A few clients at a time.</dt><dd>We deliberately keep a small number of active engagements so each one gets our full attention.</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="block" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="label">Questions</p>
+        <h2 id="faq-h">Common questions from prospective clients.</h2>
+      </div>
+      <div class="faq">
+        <div class="qa"><h3>What does a project cost?</h3><p>We price each project after scoping it. Before any work starts, you get a short written plan with what we will build, what it should save and a fixed cost.</p></div>
+        <div class="qa"><h3>How long does a typical project take?</h3><p>It depends on the problem. Scoping takes days, not weeks, and we build in small increments so you see working software early instead of waiting until the end.</p></div>
+        <div class="qa"><h3>Do we own the code?</h3><p>Yes. You own the code, the documentation and the knowledge of how it works. There is no lock-in to Essera.</p></div>
+        <div class="qa"><h3>Do you work with our existing systems?</h3><p>Yes. Most of our work connects to software a business already runs on, so data moves between systems instead of being retyped by hand.</p></div>
+        <div class="qa"><h3>When is AI the wrong answer?</h3><p>Often. If a simple integration or a rule-based workflow solves the problem reliably, that is what we recommend. We use AI where it measurably earns its place, such as reading documents or answering questions over your own files.</p></div>
+        <div class="qa"><h3>Where are you based?</h3><p>Essera is based in the Research Triangle park in North Carolina and works with companies across the US, remotely and on site when it helps.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div class="contact-copy">
+        <p class="label" style="color:var(--band-dim)">Contact</p>
+        <h2 id="contact-h">Tell us where your operation loses the most time.</h2>
+        <p>A short note on the process that frustrates you most is enough to start.</p>
+        <div class="mailrow">
+          <a class="mail" id="mail" href="mailto:tyler@essera.io">tyler@essera.io</a>
+          <button class="copy" id="copy" type="button">Copy email</button>
+        </div>
+      </div>
+      <form class="form" id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <input type="hidden" id="f-subject" name="subject" data-remove-prefix value="New Essera inquiry">
+        <p class="hp"><label>Leave this empty <input id="bot-field" name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <div class="row">
+          <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="f-company">Company</label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
+        </div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="f-msg">What process costs your team the most time?</label><textarea id="f-msg" name="message" required></textarea></div>
+        <button class="send" id="f-send" type="submit">Send</button>
+        <p class="status" id="f-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="label">© 2026 Essera</span>
+    <span class="label">Software for how businesses run</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('copy').addEventListener('click', function(){
+  var btn = this, text = 'tyler@essera.io';
+  function done(msg){ btn.textContent = msg; setTimeout(function(){ btn.textContent = 'Copy email'; }, 1800); }
+  function fallback(){
+    var r = document.createRange(); r.selectNodeContents(document.getElementById('mail'));
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); done('Selected, press Ctrl+C');
+  }
+  try {
+    navigator.clipboard.writeText(text).then(function(){ done('Copied'); }, fallback);
+  } catch(e){ fallback(); }
+});
+</script>
+
+<script>
+(function(){
+  var form=document.getElementById('contact-form'), status=document.getElementById('f-status'), btn=document.getElementById('f-send');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    btn.disabled=true; status.textContent='Sending…';
+    var n=document.getElementById('f-name').value.trim(), c=document.getElementById('f-company').value.trim();
+    document.getElementById('f-subject').value='New inquiry: '+n+(c?' ('+c+')':'');
+    var body=new URLSearchParams(new FormData(form)).toString();
+    fetch('/', {method:'POST', headers:{'Content-Type':'application/x-www-form-urlencoded'}, body:body})
+      .then(function(r){ if(!r.ok) throw new Error(r.status);
+        form.reset(); status.textContent='Thanks. Your message was sent and we will reply by email.'; })
+      .catch(function(){ status.textContent='Your message could not be sent. Please email tyler@essera.io directly.'; })
+      .finally(function(){ btn.disabled=false; });
+  });
+})();
+</script>
+</body>
+</html>
