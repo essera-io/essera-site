@@ -75,11 +75,12 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1
 .hero p.lede{max-width:34rem;color:var(--steel);font-size:1.15rem;margin:1.5rem 0 2rem}
 .cta{display:inline-flex;align-items:center;gap:.6rem;background:var(--ink);color:var(--ground);text-decoration:none;font-weight:500;padding:.85rem 1.25rem;min-height:44px}
 .cta:hover{background:var(--ember);color:#fff}
-.forge{width:100%;max-width:22rem;justify-self:center}
+.hero{overflow-x:clip}
+.forge{width:100%;max-width:22rem;justify-self:center;transform:scale(calc(1 + var(--grow,0) * .35));transform-origin:center;will-change:transform}
 .forge .b{fill:var(--ink)}
 .forge .hot{fill:var(--steel);animation:heat 2.4s ease-out .4s forwards}
 @keyframes heat{to{fill:var(--ember)}}
-@media (prefers-reduced-motion:reduce){.forge .hot{animation:none;fill:var(--ember)}}
+@media (prefers-reduced-motion:reduce){.forge .hot{animation:none;fill:var(--ember)}.forge{transform:none}}
 
 /* sections */
 section.block .wrap{padding-block:4rem;border-top:1px solid var(--rule)}
@@ -275,6 +276,20 @@ footer .wrap{padding-block:2rem;display:flex;flex-wrap:wrap;justify-content:spac
     <span class="label">Software for how businesses run</span>
   </div>
 </footer>
+
+<script>
+(function(){
+  var forge=document.querySelector('.forge'), ticking=false;
+  if(!forge || matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  function update(){
+    ticking=false;
+    var p=Math.min(1, Math.max(0, scrollY/(innerHeight*.3)));
+    forge.style.setProperty('--grow', p.toFixed(3));
+  }
+  addEventListener('scroll', function(){ if(!ticking){ ticking=true; requestAnimationFrame(update); } }, {passive:true});
+  update();
+})();
+</script>
 
 <script>
 document.getElementById('copy').addEventListener('click', function(){
